@@ -11,20 +11,10 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    display: flex;
+    gap: 30px;
   }
   
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Arial', sans-serif;
-  color: #333;
-  line-height: 1.5;
-}
 
 a {
   text-decoration: none;
@@ -116,38 +106,69 @@ ul {
   color: #555;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 
-  
-  /* Signature Blend Section */
-  .signature-pai {
-    text-align: center;
-    padding: 50px 0;
-    display: flex;
-    gap: 30px;
-    background: #000000;
-  }
+hr{
+  height:7px;
+  color: #000;
+  background-color: #000;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
 
-  .signature {
-    text-align: center;
-    padding: 50px 0;
-    background: #000000;
-  }
-  
-  .product-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .product img {
-    width: 150px;
-    height: auto;
-  }
-  
-  .product p {
-    margin-top: 10px;
-  }
+.header {
+  text-align: left;
+  margin-bottom: 30px;
+  margin-top: 80px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.products {
+  display: flex;
+  gap: 20px;
+}
+
+.product {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  flex: 1;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.product img {
+  max-width: 100%;
+  height: 30vh;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.product h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+
   
   /* House Blend Section */
   .house-blend {
@@ -185,27 +206,82 @@ ul {
     height: auto;
   }
   
-  /* Newsletter Section */
-  .newsletter {
+
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
     text-align: center;
-    background: #333;
-    color: #fff;
-    padding: 30px 0;
+    color: #333;
   }
   
-  .newsletter input {
-    padding: 10px;
-    margin-right: 10px;
-    border: none;
-    border-radius: 5px;
-  }
   
-  .newsletter button {
-    padding: 10px 20px;
-    background: #ff9900;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-  }
-  
+
+
+
+
+  /* Container do formulário */
+.form-container {
+  background-color: #1a1a1a; /* Fundo cinza escuro */
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Sombra leve */
+  width: 100%;
+  max-width: 400px; /* Largura máxima */
+  text-align: center; /* Centraliza texto interno */
+}
+
+/* Título do formulário */
+.form-container h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #fff; /* Título branco */
+}
+
+/* Labels */
+form label {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  display: block;
+  color: #fff; /* Labels brancos */
+  text-align: left; /* Alinha à esquerda */
+}
+
+/* Campos de entrada */
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #333; /* Borda cinza escuro */
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #000; /* Fundo preto */
+  color: #fff; /* Texto branco */
+}
+
+form input::placeholder {
+  color: #777; /* Placeholder cinza */
+}
+
+form input:focus {
+  border-color: #fff; /* Borda branca ao focar */
+  outline: none;
+}
+
+/* Botão */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #fff; /* Fundo branco */
+  color: #000; /* Texto preto */
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: #333; /* Fundo cinza escuro */
+  color: #fff; /* Texto branco */
+}
